@@ -13,8 +13,10 @@ func _process(delta: float) -> void:
 		direction.y += 1
 	if Input.is_action_pressed("ui_up"):
 		direction.y -= 1
-	
+
 	if direction != Vector2.ZERO:
 		direction = direction.normalized()
 	
 	position += direction * speed * delta
+	
+	$AnimatedSprite.play
