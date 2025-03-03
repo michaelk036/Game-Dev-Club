@@ -147,7 +147,7 @@ animations = [{
 "texture": SubResource("AtlasTexture_8fktp")
 }],
 "loop": true,
-"name": &"default",
+"name": &"CatPlayerCharacter_Jump_From_Run_Animation",
 "speed": 11.0
 }]
 
@@ -158,5 +158,5 @@ texture_filter = 1
 position = Vector2(80, 65)
 scale = Vector2(5.4375, 5.0625)
 sprite_frames = SubResource("SpriteFrames_2e3no")
-frame_progress = 0.760156
+animation = &"CatPlayerCharacter_Jump_From_Run_Animation"
 script = ExtResource("2_tvbu6")
