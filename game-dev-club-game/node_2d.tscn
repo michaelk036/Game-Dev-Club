@@ -1,7 +1,7 @@
 [gd_scene load_steps=26 format=3 uid="uid://bnsymavbm1p7h"]
 
 [ext_resource type="Texture2D" uid="uid://df8frbx2sftck" path="res://assets/CatPlayerCharacter_Jump_From_Run.png" id="1_61q5y"]
-[ext_resource type="Script" path="res://character/character_body_2d.gd" id="2_jpc5d"]
+[ext_resource type="Script" path="res://character_body_2d.gd" id="2_tqefe"]
 [ext_resource type="Texture2D" uid="uid://d0t1k7vspby5q" path="res://assets/_Background_ Nine-Lives-Level-1.png" id="3_bm3jc"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_0yn4t"]
@@ -164,14 +164,14 @@ size = Vector2(100, 50)
 
 [node name="ParallaxBackground" type="ParallaxBackground" parent="."]
 
-[node name="Background_City" type="Sprite2D" parent="ParallaxBackground"]
+[node name="Background" type="Sprite2D" parent="ParallaxBackground"]
 texture_filter = 1
 position = Vector2(2005, -5.00006)
 scale = Vector2(5.73267, 9.25868)
 texture = ExtResource("3_bm3jc")
 
 [node name="CharacterBody2D" type="CharacterBody2D" parent="."]
-script = ExtResource("2_jpc5d")
+script = ExtResource("2_tqefe")
 
 [node name="CatPlayerCharacter" type="AnimatedSprite2D" parent="CharacterBody2D"]
 texture_filter = 1
@@ -183,3 +183,4 @@ animation = &"CatPlayerCharacter_Jump_From_Run_Animation"
 [node name="CollisionShape2D" type="CollisionShape2D" parent="CharacterBody2D"]
 position = Vector2(187.5, 121.5)
 shape = SubResource("RectangleShape2D_lwyab")
+
