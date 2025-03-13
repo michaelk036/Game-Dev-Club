@@ -1,4 +1,4 @@
-[gd_scene load_steps=27 format=3 uid="uid://b0sw84dhqat06"]
+[gd_scene load_steps=26 format=3 uid="uid://b0sw84dhqat06"]
 
 [ext_resource type="Texture2D" uid="uid://d0t1k7vspby5q" path="res://assets/_Background_ Nine-Lives-Level-1.png" id="1_h0r5t"]
 [ext_resource type="Script" uid="uid://c3dcjv6kb0rj" path="res://character/character_body_2d.gd" id="2_6w4sf"]
@@ -160,10 +160,6 @@ animations = [{
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_jnx7o"]
 size = Vector2(98, 54)
 
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_ectjb"]
-resource_local_to_scene = true
-size = Vector2(1152, 51)
-
 [node name="TEST" type="Node2D"]
 
 [node name="ParallaxBackground" type="ParallaxBackground" parent="."]
@@ -189,15 +185,3 @@ animation = &"CatPlayerCharacter_Jump_From_Run_Animation"
 [node name="CollisionShape2D" type="CollisionShape2D" parent="CatBody2D"]
 position = Vector2(1, 1)
 shape = SubResource("RectangleShape2D_jnx7o")
-
-[node name="StaticBody2D" type="StaticBody2D" parent="."]
-disable_mode = 2
-
-[node name="ScreenBoundTop" type="CollisionShape2D" parent="StaticBody2D"]
-position = Vector2(581, 104)
-shape = SubResource("RectangleShape2D_ectjb")
-debug_color = Color(0, 0.6, 0.701961, 0.419608)
-
-[node name="ScreenBoundBottom" type="CollisionShape2D" parent="StaticBody2D"]
-position = Vector2(578, 489)
-shape = SubResource("RectangleShape2D_ectjb")
