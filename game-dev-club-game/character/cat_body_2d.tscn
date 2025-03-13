@@ -164,6 +164,21 @@ position = Vector2(581, 294)
 motion_mode = 1
 script = ExtResource("1_k7cyb")
 
+[node name="ParallaxBackground" type="ParallaxBackground" parent="."]
+follow_viewport_enabled = true
+
+[node name="Background" type="Sprite2D" parent="ParallaxBackground"]
+texture_filter = 1
+position = Vector2(2005, -1.00006)
+scale = Vector2(5.73267, 9.25868)
+texture = ExtResource("3_bm3jc")
+
+[node name="CharacterBody2D" type="CharacterBody2D" parent="."]
+position = Vector2(605, 75)
+script = ExtResource("2_tqefe")
+
+[node name="CatPlayerCharacter" type="AnimatedSprite2D" parent="CharacterBody2D"]
+texture_filter = 1
 [node name="CatPlayerCharacter" type="AnimatedSprite2D" parent="."]
 texture_filter = 1
 position = Vector2(5, 4)
@@ -171,6 +186,12 @@ scale = Vector2(5.4375, 5.0625)
 sprite_frames = SubResource("SpriteFrames_2e3no")
 animation = &"CatPlayerCharacter_Jump_From_Run_Animation"
 
+[node name="CollisionShape2D" type="CollisionShape2D" parent="CharacterBody2D"]
+position = Vector2(-5, -5)
+shape = SubResource("RectangleShape2D_lwyab")
+
+[node name="Camera2D" type="Camera2D" parent="CharacterBody2D"]
+position = Vector2(-4, 1)
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2(1, 1)
 shape = SubResource("RectangleShape2D_jnx7o")
