@@ -1,7 +1,7 @@
 [gd_scene load_steps=27 format=3 uid="uid://b0sw84dhqat06"]
 
 [ext_resource type="Texture2D" uid="uid://d0t1k7vspby5q" path="res://assets/_Background_ Nine-Lives-Level-1.png" id="1_h0r5t"]
-[ext_resource type="Script" path="res://character/character_body_2d.gd" id="2_6w4sf"]
+[ext_resource type="Script" uid="uid://c3dcjv6kb0rj" path="res://character/character_body_2d.gd" id="2_6w4sf"]
 [ext_resource type="Texture2D" uid="uid://df8frbx2sftck" path="res://assets/CatPlayerCharacter_Jump_From_Run.png" id="3_w3sva"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_0yn4t"]
