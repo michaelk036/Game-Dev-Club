@@ -1,7 +1,6 @@
-[gd_scene load_steps=27 format=3 uid="uid://bnsymavbm1p7h"]
+[gd_scene load_steps=26 format=3 uid="uid://bnsymavbm1p7h"]
 
 [ext_resource type="Texture2D" uid="uid://df8frbx2sftck" path="res://assets/CatPlayerCharacter_Jump_From_Run.png" id="1_61q5y"]
-[ext_resource type="Script" path="res://camera_2d.gd" id="2_4ve38"]
 [ext_resource type="Script" path="res://character_body_2d.gd" id="2_tqefe"]
 [ext_resource type="Texture2D" uid="uid://d0t1k7vspby5q" path="res://assets/_Background_ Nine-Lives-Level-1.png" id="3_bm3jc"]
 
@@ -164,6 +163,7 @@ size = Vector2(100, 50)
 [node name="TEST" type="Node2D"]
 
 [node name="ParallaxBackground" type="ParallaxBackground" parent="."]
+follow_viewport_enabled = true
 
 [node name="Background" type="Sprite2D" parent="ParallaxBackground"]
 texture_filter = 1
@@ -177,15 +177,13 @@ script = ExtResource("2_tqefe")
 
 [node name="CatPlayerCharacter" type="AnimatedSprite2D" parent="CharacterBody2D"]
 texture_filter = 1
-position = Vector2(3, 6)
 scale = Vector2(5.4375, 5.0625)
 sprite_frames = SubResource("SpriteFrames_2e3no")
 animation = &"CatPlayerCharacter_Jump_From_Run_Animation"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="CharacterBody2D"]
-position = Vector2(-2.5, 0.5)
+position = Vector2(-5, -5)
 shape = SubResource("RectangleShape2D_lwyab")
 
 [node name="Camera2D" type="Camera2D" parent="CharacterBody2D"]
 position = Vector2(-4, 1)
-script = ExtResource("2_4ve38")
