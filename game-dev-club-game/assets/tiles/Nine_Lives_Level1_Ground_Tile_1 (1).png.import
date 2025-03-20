@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://s7bdlvubnm2n"
-path="res://.godot/imported/Nine_Lives_Level1_Ground_Tile_1 (1).png-53273c774400787c7c07d630945023bd.ctex"
+path="res://.godot/imported/Nine_Lives_Level1_Ground_Tile_1 (1).png-f28968fbe6efd39a8e0b372253adf3f6.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/Nine_Lives_Level1_Ground_Tile_1 (1).png"
-dest_files=["res://.godot/imported/Nine_Lives_Level1_Ground_Tile_1 (1).png-53273c774400787c7c07d630945023bd.ctex"]
+source_file="res://assets/tiles/Nine_Lives_Level1_Ground_Tile_1 (1).png"
+dest_files=["res://.godot/imported/Nine_Lives_Level1_Ground_Tile_1 (1).png-f28968fbe6efd39a8e0b372253adf3f6.ctex"]
 
 [params]
 

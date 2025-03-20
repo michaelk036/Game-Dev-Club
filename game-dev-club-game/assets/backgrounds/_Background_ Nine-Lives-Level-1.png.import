@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://df8frbx2sftck"
-path="res://.godot/imported/CatPlayerCharacter_Jump_From_Run.png-55833148dceb13f39f3b88ba91ae4eb3.ctex"
+uid="uid://d0t1k7vspby5q"
+path="res://.godot/imported/_Background_ Nine-Lives-Level-1.png-bcfac874c69f7de9feb4838941a41fe7.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/CatPlayerCharacter_Jump_From_Run.png"
-dest_files=["res://.godot/imported/CatPlayerCharacter_Jump_From_Run.png-55833148dceb13f39f3b88ba91ae4eb3.ctex"]
+source_file="res://assets/backgrounds/_Background_ Nine-Lives-Level-1.png"
+dest_files=["res://.godot/imported/_Background_ Nine-Lives-Level-1.png-bcfac874c69f7de9feb4838941a41fe7.ctex"]
 
 [params]
 

@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://vm32528l3ur4"
-path="res://.godot/imported/Nine_Lives_Level1_Building_Edge_Tile_1.png-2673c4a30ec24bc8b4460eb786680a15.ctex"
+uid="uid://dj62t8jdi1rgt"
+path="res://.godot/imported/Nine_Lives_Level1_Building_Floor_Tile_1.png-12b03b2bad3d4d23bcd3920d1dc702e1.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/Nine_Lives_Level1_Building_Edge_Tile_1.png"
-dest_files=["res://.godot/imported/Nine_Lives_Level1_Building_Edge_Tile_1.png-2673c4a30ec24bc8b4460eb786680a15.ctex"]
+source_file="res://assets/tiles/Nine_Lives_Level1_Building_Floor_Tile_1.png"
+dest_files=["res://.godot/imported/Nine_Lives_Level1_Building_Floor_Tile_1.png-12b03b2bad3d4d23bcd3920d1dc702e1.ctex"]
 
 [params]
 
