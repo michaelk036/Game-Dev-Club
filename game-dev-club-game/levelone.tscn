@@ -167,8 +167,12 @@ size = Vector2(1152, 51)
 [node name="TEST" type="Node2D"]
 
 [node name="ParallaxBackground" type="ParallaxBackground" parent="."]
+scroll_offset = Vector2(0, 1)
+scroll_base_scale = Vector2(0.5, 1)
 
-[node name="Background" type="Sprite2D" parent="ParallaxBackground"]
+[node name="ParallaxLayer" type="ParallaxLayer" parent="ParallaxBackground"]
+
+[node name="Background" type="Sprite2D" parent="ParallaxBackground/ParallaxLayer"]
 texture_filter = 1
 position = Vector2(584, 296)
 scale = Vector2(5.73267, 9.25868)
@@ -191,6 +195,8 @@ animation = &"CatPlayerCharacter_Jump_From_Run_Animation"
 position = Vector2(1, 1)
 scale = Vector2(1.01, 1.01)
 shape = SubResource("RectangleShape2D_jnx7o")
+
+[node name="Camera2D" type="Camera2D" parent="CatBody2D"]
 
 [node name="StaticBody2D" type="StaticBody2D" parent="."]
 disable_mode = 2
