@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://sgwi64mvjkgf"
-path="res://.godot/imported/_Cat Player Character_ Jump-From-Run Animation.png-e8a1f8389b060d9e06016f7cab1533c8.ctex"
+uid="uid://cvsxmtbn6ib86"
+path="res://.godot/imported/_Cat Player Character_ Run-Loop Animation (1).png-ca24c8b64e06e47e9c2671a09f26f4d6.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/_Cat Player Character_ Jump-From-Run Animation.png"
-dest_files=["res://.godot/imported/_Cat Player Character_ Jump-From-Run Animation.png-e8a1f8389b060d9e06016f7cab1533c8.ctex"]
+source_file="res://assets/player animations/_Cat Player Character_ Run-Loop Animation (1).png"
+dest_files=["res://.godot/imported/_Cat Player Character_ Run-Loop Animation (1).png-ca24c8b64e06e47e9c2671a09f26f4d6.ctex"]
 
 [params]
 
