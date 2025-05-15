@@ -1,2 +1,5 @@
-# WHS-Game-Dev
-Official Github Repository for the Westborough High School Game Dev Club
+###### Game Dev Club at Westborough High School
+
+Nine Lives
+
+
