@@ -1,7 +1,7 @@
 [gd_scene load_steps=27 format=3 uid="uid://b0sw84dhqat06"]
 
 [ext_resource type="Texture2D" uid="uid://d0t1k7vspby5q" path="res://assets/_Background_ Nine-Lives-Level-1.png" id="1_h0r5t"]
-[ext_resource type="Script" path="res://character/character_body_2d.gd" id="2_6w4sf"]
+[ext_resource type="Script" uid="uid://dugj16f0vq3wy" path="res://character/character_body_2d.gd" id="2_6w4sf"]
 [ext_resource type="Texture2D" uid="uid://df8frbx2sftck" path="res://assets/CatPlayerCharacter_Jump_From_Run.png" id="3_w3sva"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_0yn4t"]
@@ -167,8 +167,12 @@ size = Vector2(1152, 51)
 [node name="TEST" type="Node2D"]
 
 [node name="ParallaxBackground" type="ParallaxBackground" parent="."]
+scroll_offset = Vector2(0, 1)
+scroll_base_scale = Vector2(0.5, 1)
 
-[node name="Background" type="Sprite2D" parent="ParallaxBackground"]
+[node name="ParallaxLayer" type="ParallaxLayer" parent="ParallaxBackground"]
+
+[node name="Background" type="Sprite2D" parent="ParallaxBackground/ParallaxLayer"]
 texture_filter = 1
 position = Vector2(584, 296)
 scale = Vector2(5.73267, 9.25868)
@@ -176,7 +180,8 @@ texture = ExtResource("1_h0r5t")
 
 [node name="CatBody2D" type="CharacterBody2D" parent="."]
 position = Vector2(581, 294)
-motion_mode = 1
+collision_mask = 2
+safe_margin = 0.001
 script = ExtResource("2_6w4sf")
 
 [node name="CatPlayerCharacter" type="AnimatedSprite2D" parent="CatBody2D"]
@@ -188,16 +193,20 @@ animation = &"CatPlayerCharacter_Jump_From_Run_Animation"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="CatBody2D"]
 position = Vector2(1, 1)
+scale = Vector2(1.01, 1.01)
 shape = SubResource("RectangleShape2D_jnx7o")
+
+[node name="Camera2D" type="Camera2D" parent="CatBody2D"]
 
 [node name="StaticBody2D" type="StaticBody2D" parent="."]
 disable_mode = 2
+collision_layer = 2
 
 [node name="ScreenBoundTop" type="CollisionShape2D" parent="StaticBody2D"]
 position = Vector2(581, 104)
 shape = SubResource("RectangleShape2D_ectjb")
 debug_color = Color(0, 0.6, 0.701961, 0.419608)
 
-[node name="ScreenBoundBottom" type="CollisionShape2D" parent="StaticBody2D"]
+[node name="ScreenBoundBottom" type="CollisionShape2D" parent="StaticBody2D" groups=["ground"]]
 position = Vector2(578, 489)
 shape = SubResource("RectangleShape2D_ectjb")
